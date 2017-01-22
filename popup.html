@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+      body{
+        width:300px;
+        height: 300px;
+        padding:1rem;
+      }
+      button.emoji
+      {
+      width: 25px; 
+      height:25px; 
+      border: 0px;
+      background: transparent;
+      }
+      div.e-category
+      {
+        float: left;
+        border: 5px;
+        width: 10%;
+        height: 100%;
+      }
+      button.e-categorybox
+      {
+        height: 11.111%;
+      }
+      div.resultarea
+      {
+        width: 90%;
+        float: right;
+      }
+      div.searcharea
+      {
+        width:90%;
+        float: right;
+      }
+      textarea{
+        width:100%;
+        font-size:1rem;
+      }
+      #result{
+        width:90%;
+        float: right;
+        font-size:2.5rem;
+      }
+    </style>
+</head>
+
+<body>
+  <div class=e-category>
+    <button type="button" class="e-categorybox" title="최근 사용함" data-category="recent" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="스마일리 및 사람" data-category="people" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="동물 및 자연" data-category="nature" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="음식 및 음료" data-category="food" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="내 주변 관심사" data-category="activity" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="여행 및 장소" data-category="travel" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="사물" data-category="objects" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="기호" data-category="symbols" tabindex="-1"></button>
+    <button type="button" class="e-categorybox" title="깃발" data-category="flags" tabindex="-1"></button>
+</div>
+<div class="searcharea">
+  <textarea id="user" rows="1"></textarea>
+  <div id="result"></div>
+  <div class="resultarea">
+    <h2>
+      <button type="button" class="emoji" data-key="sth" data-placement="bottom-right" tabindex="-1" title="미소 짓는 표정" style=" background-image: url(/icon.png);"></button>
+</h2>
+</div>
+<script src="script.js"></script>
+</div>
+</body>
+
+</html>
